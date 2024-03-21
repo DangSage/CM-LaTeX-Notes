@@ -1,10 +1,15 @@
 \documentclass{article}
 
+\title{A Basic Introductory to LaTeX}
+\author{Ethan Khai Dang\thanks{An Undergraduate at University of Massachusetts, Lowell. Graduating in 2026.}}
+\date{2024 March 21}
+
 \begin{document}
-\begin{titlepage}
-\begin{center}
-    \huge{Title Cover for LaTeX workflow}
-\end{center}
+
+\maketitle
+\thispagestyle{empty} % Optional: Removes page number from title page
+\newpage
+
 \begin{abstract}
     In general this is a really easy way we can get started with formatting and simply just getting things on paper without thinking about it.
     Of course, some of this is going to be formatted strangely in ways you can't really predict quite yet.
@@ -12,6 +17,9 @@
     Despite that, this should not deter you from learning the basics of what a LaTeX workflow can look like!
 \end{abstract}
 
-\end{titlepage}
-\pagebreak
+To compile, you can use the following command:
+\begin{verbatim}
+    pdflatex basic.tex
+\end{verbatim}
+
 \end{document}
