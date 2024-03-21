@@ -12,4 +12,9 @@ Read `basic.tex` for more info if this is your first time getting started with L
 ## Requirements:
 - LaTeX: install via ```sudo apt-get install texlive-base``` (Ubuntu)
 
+### Recommended packages:
+`sudo apt-get install texlive`
+`sudo apt-get install texlive-science` # for mhchem and stmaryrd
+`sudo apt-get install texlive-latex-extra` # for adjustbox
+
 Make sure you have the right distribution of texlive and the needed packages for your system.
