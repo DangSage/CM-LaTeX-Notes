@@ -11,15 +11,26 @@
 \newpage
 
 \begin{abstract}
-    In general this is a really easy way we can get started with formatting and simply just getting things on paper without thinking about it.
-    Of course, some of this is going to be formatted strangely in ways you can't really predict quite yet.
+In general this is a really easy way we can get started with formatting and simply just getting things on paper without thinking about it.
+Of course, some of this is going to be formatted strangely in ways you can't really predict quite yet.
 
-    Despite that, this should not deter you from learning the basics of what a LaTeX workflow can look like!
+Despite that, this should not deter you from learning the basics of what a LaTeX workflow can look like! There are some quirks,
+but we can easily create some scalable documents that look really nice and are easy to read. Here are some of them.
 \end{abstract}
 
-To compile, you can use the following command:
+
+As you may notice, every time we hit a new line, it doesn't actually start a new line in the document. This is because we need to use two backslashes to start a new line. This is a little bit strange, but it's something you'll get used to.
+This is a new line.\\We are passed the newline! You can see that we are now on a new line.\\And now there's another!
+\\Newline 1\\Newline 2\\Newline 3
+
+Of course we need an actual way to compile this as well. To compile, you can use the following command:
 \begin{verbatim}
     pdflatex basic.tex
+\end{verbatim}
+
+This will create a file called \texttt{basic.pdf} that you can open and view. You can also use the following command to create a \texttt{.dvi} file:
+\begin{verbatim}
+    latex basic.tex
 \end{verbatim}
 
 \end{document}
