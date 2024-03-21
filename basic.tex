@@ -27,10 +27,51 @@ Of course we need an actual way to compile this as well. To compile, you can use
 \begin{verbatim}
     pdflatex basic.tex
 \end{verbatim}
-
-This will create a file called \texttt{basic.pdf} that you can open and view. You can also use the following command to create a \texttt{.dvi} file:
+This will create a file called \texttt{basic.pdf} that you can open and view. In compiling this document, we created a bunch of auxiliary files that we don't really need to worry about.\\
+With the command \texttt{latexmk -c} we can remove all of these files. This is however a different command apart of the Ubuntu package manger, using the following command
 \begin{verbatim}
-    latex basic.tex
+    sudo apt-get install latexmk
 \end{verbatim}
+
+You may notice that the formatting is a little bit strange on the pdf. This is because we haven't actually told LaTeX to start a new page yet. We can do this by using the \texttt{newpage} command. This will start a new page in the document.\\
+\newpage
+This is a new page!\\
+\newpage
+% create a new page
+\section{Sections}
+We can also create sections in the document. This is done using the \texttt{section} command. This will create a new section in the document.\\\\
+\textbf{Subsections}\\
+We can also create subsections in the document. This is done using the \texttt{subsection} command. This will create a new subsection in the document.\\\\
+\textit{Subsubsections}\\
+We can also create subsubsections in the document. This is done using the \texttt{subsubsection} command. This will create a new subsubsection in the document.\\\\
+\textbf{Bold Text}\\
+We can also create bold text in the document. This is done using the \texttt{textbf} command. This will create bold text in the document.\\\\
+\textit{Italic Text}\\
+We can also create italic text in the document. This is done using the \texttt{textit} command. This will create italic text in the document.\\\\
+\texttt{Typewriter Text}\\
+We can also create typewriter text in the document. This is done using the \texttt{texttt} command. This will create typewriter text in the document.\\\\
+\textbf{Lists}\\
+We can also create lists in the document. This is done using the \texttt{itemize} command. This will create a list in the document.\\
+\begin{itemize}
+    \item This is the first item in the list.
+    \item This is the second item in the list.
+    \item This is the third item in the list.
+\end{itemize}
+\newpage
+\section{Package Management}
+We can also use packages in the document. This is done using the \texttt{usepackage} command. This will allow us to use packages in the document.\\
+\begin{verbatim}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{graphicx}
+    \usepackage{hyperref}
+\end{verbatim}
+This will allow us to use the \texttt{amsmath}, \texttt{amssymb}, \texttt{graphicx}, and \texttt{hyperref} packages in the document.\\
+\section{Conclusion}
+
+In general, this is a lot to learn all at once, but it genuinely proves to be a very fast tool to use.
+This kind of format allows us to not need to think about the formatting of the document as much. We can just write and let LaTeX handle the rest.\\
+Compiling is not so hard, and we can easily get a nice looking document.\\
+Of course other functionality is available, and that will require using packages.
 
 \end{document}
